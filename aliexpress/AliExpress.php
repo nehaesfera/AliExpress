@@ -4,7 +4,7 @@ class AliExpress
 {    
     public function __construct()
     {
-        require_once 'inventory/AliClient.php';
+        require_once __DIR__.'/inventory/AliClient.php';
     }
     
     /**
@@ -189,7 +189,7 @@ class AliExpress
      */
     public function getListCategory()
     {
-        $catList = require 'inventory/ali_categories.php';
+        $catList = require __DIR__.'/inventory/ali_categories.php';
         return $catList;
     }
 }
